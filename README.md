@@ -7,7 +7,11 @@ In the paper, we propose a generic, fast and flexible approach to improve the ro
 
 Installation
 --------------------------
-Due to PreciseRoIPooling, **PLEASE USE THE COMMAND TO DOWNLOADE THE CODE:** ```git clone https://github.com/TJUMMG/TGSR.git```
+Get the code by ```git clone https://github.com/TJUMMG/TGSR.git```. 
+
+Alternatively, you can download the zip `TGSR.zip` in  [Baidupan](https://pan.baidu.com/s/1lkb6tApeoGKJO4deVWQ8Qw), keyword: 9tu5. `TGSR.zip` has already included raw results, models and pkl results.
+
+
 
 You can use the following command to build your environment.
 
@@ -68,10 +72,14 @@ Usage
 
 ### Test
 
-1. Download models in [Baidupan](https://pan.baidu.com/s/1lkb6tApeoGKJO4deVWQ8Qw), keyword: 9tu5
+1. download models in [Baidupan](https://pan.baidu.com/s/1lkb6tApeoGKJO4deVWQ8Qw), keyword: 9tu5
    - `experiments.zip` : the model of SiamRPN++ and SiamMask, should be unzipped to `./experiments`
+   
+2. download the TGSR models in [Baidupan](https://pan.baidu.com/s/1lkb6tApeoGKJO4deVWQ8Qw), keyword: 9tu5
 
-2. run the command
+   - `snapshot_test.zip` : the model of TGSR, should be unzipped to `./snapshot_test`  
+
+3. run the command
 
    ```python  
    python ./tools/test_SiamRPN++_VOT.py --dataset VOT2016
@@ -90,14 +98,14 @@ Usage
 
 ### Eval ALTL
 
-1. Download the pkl result in [Baidupan](https://pan.baidu.com/s/1lkb6tApeoGKJO4deVWQ8Qw), keyword: 9tu5
+1. download the pkl result in [Baidupan](https://pan.baidu.com/s/1lkb6tApeoGKJO4deVWQ8Qw), keyword: 9tu5
 
-   - `snapshot_test.zip` : the model of TGSR, should be unzipped to `./snapshot_test`
+   - `research.zip` : the model of TGSR, should be unzipped to `./poineer/research/`
 
 2. run the command and get the  Average Longest Tracking Length (ALTL) of SiamRPN++_TGSR on the VOT2016
 
    ```
-   python ./pioneer/research/eval_tool.p
+   python ./pioneer/research/eval_tool.py
    ```
 
 
