@@ -70,7 +70,7 @@ Usage
 
    
 
-### Test
+### Test & Eval
 
 1. download models in [Baidupan](https://pan.baidu.com/s/1lkb6tApeoGKJO4deVWQ8Qw), keyword: 9tu5
    - `experiments.zip` : the model of SiamRPN++ and SiamMask, should be unzipped to `./experiments`
@@ -84,7 +84,11 @@ Usage
    ```python  
    python ./tools/test_SiamRPN++_VOT.py --dataset VOT2016
    ```
+4. evaluate the tracker performance
 
+   ```python  
+   python ./tools/eval.py --dataset VOT2016
+   ```
    
 
 ### Train
